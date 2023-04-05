@@ -17,11 +17,21 @@ else {
     }
 Expected Output: True for 1 or roll 2-6.
 
-Test:
-Code:
+Test: if player rolls a 2 or greater will add to sum, if player rolls a 1, turn is zeroed out and no points are added to players score.
+Code:let sum = 0;
+
+function Turn() {
+    let roll = Math.floor(Math.random() * 6) + 1;
+    if(roll === 1) {
+      roll = playerSum
+      }
+    else {
+      roll += 1;
+      }
+    }  
 
 return true = 0
 
 
 
-Expected Output:
+Expected Output: if player rolls a 1 at any point then sum of points will reset to 0, if player rolls number other than 0, roll adds to previous roll
