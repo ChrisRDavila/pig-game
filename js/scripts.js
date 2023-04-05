@@ -3,6 +3,12 @@
 // first test
 function Turn() {
     let roll = Math.floor(Math.random() * 6) + 1;
-    return roll;}
-
+    return roll;
 // second test
+    if(roll === 1) {
+      return true;
+      }
+    else {
+      return roll
+      }
+    }  
