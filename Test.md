@@ -37,16 +37,9 @@ function Turn(){
 ## Expected Output: 
 if player rolls a 1 at any point then sum of points will reset to 0, if player rolls number other than 0, roll adds to previous roll
 
-## Describe
-Winner()
-
 ## Test
-Test: If sum >= 100 then window alert will say "winner winner chicken dinner" 
+If sum >= 100 then window alert will say "winner winner chicken dinner" 
 ## Code:
-
-## Expected Output:
-window alert will say "Hot dog we got a weiner"
-
 let sum = 0;
 function Turn(){
   let roll = Math.floor(Math.random() * 6) + 1;
@@ -60,3 +53,18 @@ function Turn(){
       }
       return sum;
     } 
+
+## Expected Output:
+window alert will say "winner winner chicken dinner"
+
+## Test:
+## Code:
+## Expected Output
+
+## Test:
+## Code:
+## Expected Output:
+
+## Test:
+## Code:
+## Expected Output:

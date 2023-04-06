@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" rel="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,20 @@
     <title>Pig Dice!</title>
 </head>
 <body>
-    <div class="container">
-    
+    <h1>Pig Dice Game</h1>
+    <div class="player" id="player1">
+        <h2>Player 1</h2>
+        <p>Score: <span id="score1">0</span></p>
     </div>
+
+    <div class="player" id="player2">
+        <h2>Player 2</h2>
+        <p>Score: <span id="score2">0</span></p>
+    </div>
+
+    <button id="rollDice">Roll Dice</button>
+<!--<div class="hidden" id="winner">
+        <h2>Congratulation Player (append resulting winner here)</h2>
+    </div>-->
 </body>
 </html>
