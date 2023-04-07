@@ -3,26 +3,34 @@
 <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pig Dice!</title>
 </head>
 <body>
     <h1>Pig Dice Game</h1>
+    <form id="names">
+        <label for="player-one-name">Player One</label>
+        <input type="text" class="form-control" id="player-one-name">
+        <label for="player-two-name">Player Two</label>
+        <input type="text" class="form-control" id="player-two-name">
+        <button type="submit" class="names">Submit</button>
+    </form>
     <div class="player" id="player1">
         <h2>Player 1</h2>
         <p>Score: <span id="score1">0</span></p>
+        <button id="playerOnedice" class="hidden">Roll Dice</button>
+        <button id="p1-hold" class="hidden">Hold</button>
+        <h3>Turn Score: <span id="p1-turnscore"></span> </h3>
     </div>
 
     <div class="player" id="player2">
         <h2>Player 2</h2>
         <p>Score: <span id="score2">0</span></p>
+        <button id="playerTwodice" class="hidden">Roll Dice</button>
+        <button id="p2-hold" class="hidden">Hold</button>
+        <h3>Turn Score: <span id=p2-turnscore></span></h3>
     </div>
-
-    <button id="rollDice">Roll Dice</button>
-<!--<div class="hidden" id="winner">
-        <h2>Congratulation Player (append resulting winner here)</h2>
-    </div>-->
+    <div class="hidden" id="winner">
+        <h4>Congratulation: </h4>
+    </div>
 </body>
 </html>
